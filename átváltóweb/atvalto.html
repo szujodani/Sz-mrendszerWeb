@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számrendszer Átváltó</title>
+    <link rel="stylesheet" href="formazas.css">
+    <link rel="stylesheet" href="oktatformazas.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="menu.html">Főmenü</a>
+        <a href="binaris.html">Bináris</a>
+        <a href="oktalis.html">Oktális</a>
+        <a href="decimalis.html">Decimális</a>
+        <a href="hexadecimalis.html">Hexadecimális</a>
+        <a href="atvalto.html">Átváltó</a>
+    </div>
+
+    <div class="container">
+        <h1>Számrendszer Átváltó</h1>
+        <div class="form">
+            <label for="inputNumber">Írj be egy számot:</label>
+            <input type="text" id="inputNumber" placeholder="Pl. 1010" />
+
+            <label for="fromSystem">Forrás számrendszer:</label>
+            <select id="fromSystem">
+                <option value="binary">Bináris</option>
+                <option value="decimal">Decimális</option>
+                <option value="octal">Oktális</option>
+                <option value="hexadecimal">Hexadecimális</option>
+            </select>
+
+            <label for="toSystem">Cél számrendszer:</label>
+            <select id="toSystem">
+                <option value="binary">Bináris</option>
+                <option value="decimal">Decimális</option>
+                <option value="octal">Oktális</option>
+                <option value="hexadecimal">Hexadecimális</option>
+            </select>
+
+            <button onclick="convert()">Átváltás</button>
+        </div>
+
+        <div class="result">
+            <h2>Eredmény:</h2>
+            <p id="outputResult">Nincs eredmény.</p>
+        </div>
+    </div>
+    
+    <script src="java.js"></script>
+</body>
+</html>
